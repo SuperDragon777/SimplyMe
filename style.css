@@ -8,9 +8,13 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    padding-top: 90px;
     background: #f8f9fa;
-    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 .header {
@@ -59,17 +63,7 @@ body {
     width: 200%;
     height: 200%;
     background: radial-gradient(circle, rgba(168, 249, 255, 0.15) 0%, rgba(168, 249, 255, 0) 70%);
-    animation: rotate 25s linear infinite;
-    z-index: -1;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    z-index: -1000;
 }
 
 .header::after {
@@ -90,4 +84,63 @@ body {
     to {
         opacity: 1;
     }
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 12px 120px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.github-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.telegram-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0088cc;
+    color: white;
+    padding: 12px 120px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.telegram-btn:hover {
+    background-color: #0077b5;
+    transform: scale(1.05);
+}
+
+.telegram-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap; /* Перенос элементов на новую строку */
+  justify-content: center; /* Выравнивание по горизонтали */
+  align-items: center; /* Выравнивание по вертикали (если нужно) */
+  gap: 10px; /* Расстояние между элементами */
+  height: 200px;
 }
