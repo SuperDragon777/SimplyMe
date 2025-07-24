@@ -137,10 +137,10 @@ body {
 }
 
 .links {
-  display: flex;
-  flex-wrap: wrap; /* Перенос элементов на новую строку */
-  justify-content: center; /* Выравнивание по горизонтали */
-  align-items: center; /* Выравнивание по вертикали (если нужно) */
-  gap: 10px; /* Расстояние между элементами */
-  height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 400px;
 }
