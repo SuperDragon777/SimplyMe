@@ -313,8 +313,7 @@ hr::after {
 }
 
 .wall {
-    height: 500px;
-    width: fit-content;
+    max-height: 500px;
     margin-top: 50px;
     border-radius: 10px;
 }
