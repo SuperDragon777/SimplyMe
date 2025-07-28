@@ -36,6 +36,7 @@ html {
     font-size: 18px;
     font-weight: 600;
     transition: all 0.3s ease;
+    margin-top: 10px;
 }
 
 .github-btn:hover {
@@ -309,4 +310,79 @@ hr::after {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+.wall {
+    height: 500px;
+    width: fit-content;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.wall_div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.oh_my_div {
+    padding-top: 100px;
+    padding-left: 50px;
+    display: block;
+}
+
+.p-ishka {
+    padding-top: 30px;
+}
+
+.xbox-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #107C10; /* Зеленый Xbox */
+    color: white;
+    padding: 12px 120px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.xbox-btn:hover {
+    background-color: #0E700E;
+    transform: scale(1.05);
+}
+
+.xbox-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.steam-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #171a21;
+    color: white;
+    padding: 12px 120px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.steam-btn:hover {
+    background-color: #1b2838;
+    transform: scale(1.05);
+}
+
+.steam-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
 }
