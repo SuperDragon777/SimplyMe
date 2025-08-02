@@ -15,8 +15,9 @@ body {
     background-color: #f0f8ff;
     height: auto;
     position: relative;
-    background: url(/other/portal_background.jpg) no-repeat center center fixed;
+    background: url(other/portal_background.jpg) no-repeat center center fixed;
     background-size: cover;
+    background-color: aqua;
 }
 
 html {
