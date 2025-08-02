@@ -30,6 +30,6 @@ const button = document.getElementById("send-btn");
 button.addEventListener("click", function () {
     const inputValue = input.value.trim();
     if (inputValue === "#iloveportal") {
-        window.location.href = '/iloveportal.html'
+        window.location.href = '/SimplyMe/iloveportal.html'
     }
 });
