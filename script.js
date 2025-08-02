@@ -23,3 +23,13 @@ const header_container = document.getElementById("header-container");
 }
 });
 
+const input = document.getElementById("secret_input");
+const button = document.getElementById("send-btn");
+
+
+button.addEventListener("click", function () {
+    const inputValue = input.value.trim();
+    if (inputValue === "#iloveportal") {
+        window.location.href = 'pages/#iloveportal/iloveportal.html'
+    }
+});

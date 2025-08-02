@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: "Arial", sans-serif;
+    padding-top: 120px;
+    background-color: #f0f8ff;
+    height: auto;
+    position: relative;
+    background: url(/other/portal_background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 12px 120px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.github-btn:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+.github-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.telegram-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0088cc;
+    color: white;
+    padding: 12px 120px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.telegram-btn:hover {
+    background-color: #0077b5;
+    transform: scale(1.05);
+}
+
+.telegram-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #00ced1, #20b2aa, #008b8b);
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 4px 15px rgba(0, 139, 139, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.small {
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 139, 139, 0.2);
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.header.small .logo {
+    transform: scale(0.9);
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #e0ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.header.small .logo-text {
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header.small {
+    font-size: 2.2rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.head {
+    height: 80px;
+    width: 80px;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 2.8rem;
+    transition: all 0.3s ease;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #008b8b, #20b2aa, #00ced1);
+    color: white;
+    padding: 30px 0 20px;
+    box-shadow: 0 -4px 15px rgba(0, 139, 139, 0.3);
+    margin-top: 30px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #e0ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.github-pages {
+    color: #004c8b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.github-pages:hover {
+    color: #007adf;
+}
+
+.text_prtl {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: Arial Black;
+    opacity: 80%;
+}
+
+.center_i {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.ya-ustal {
+    background-color: #4062bb;
+    background-image: linear-gradient(316deg, #070070 0%, #300045 74%);
+    border-radius: 15px;
+    width: 800px;
+}
