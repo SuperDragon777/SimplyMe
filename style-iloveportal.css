@@ -11,7 +11,7 @@ body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-family: "Arial", sans-serif;
-    padding-top: 120px;
+    padding-top: 70px;
     background-color: #f0f8ff;
     height: auto;
     position: relative;
@@ -24,66 +24,6 @@ html {
     scroll-behavior: smooth;
     -webkit-user-select: none;
     user-select: none;
-}
-
-.github-btn {
-    display: inline-flex;
-    align-items: center;
-    background-color: #000000;
-    color: white;
-    padding: 12px 120px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-}
-
-.github-btn:hover {
-    background-color: #333333;
-    transform: scale(1.05);
-}
-
-.github-logo {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    fill: white;
-}
-
-.telegram-btn {
-    display: inline-flex;
-    align-items: center;
-    background-color: #0088cc;
-    color: white;
-    padding: 12px 120px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    margin-top: 10px;
-}
-
-.telegram-btn:hover {
-    background-color: #0077b5;
-    transform: scale(1.05);
-}
-
-.telegram-logo {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    fill: white;
-}
-
-.links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
 }
 
 
@@ -188,7 +128,6 @@ html {
     color: white;
     padding: 30px 0 20px;
     box-shadow: 0 -4px 15px rgba(0, 139, 139, 0.3);
-    margin-top: 30px;
 }
 
 .footer-container {
@@ -236,12 +175,13 @@ html {
 }
 
 .text_prtl {
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 10px;
     margin-bottom: 20px;
     color: #ffffff;
-    font-family: Arial Black;
+    font-family: Verdana ;
     opacity: 80%;
+    font-size: 20px;
 }
 
 .center_i {
@@ -249,9 +189,61 @@ html {
     justify-content: center;
     align-items: flex-start;
 }
+
 .ya-ustal {
     background-color: #4062bb;
     background-image: linear-gradient(316deg, #070070 0%, #300045 74%);
-    border-radius: 15px;
-    width: 800px;
+    width: 900px;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cp_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.cp_text {
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    font-size: 28px;
+    margin-top: 100px;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(0, 206, 209, 0.5), 
+        #00ced1, 
+        rgba(0, 206, 209, 0.5), 
+        transparent);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    width: 600px;
+}
+
+hr::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: repeating-linear-gradient(90deg,
+        transparent,
+        transparent 5px,
+        rgba(255, 255, 255, 0.3) 5px,
+        rgba(255, 255, 255, 0.3) 7px);
+}
+
+.iframe_p {
+    margin-top: 40px;
 }
