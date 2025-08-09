@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-family: "Arial", sans-serif;
+    padding-top: 120px;
+    background-color: #f0f8ff;
+    height: auto;
+    position: relative;
+    height: 900px;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #00ced1, #20b2aa, #008b8b);
+    color: white;
+    padding: 25px 0;
+    box-shadow: 0 4px 15px rgba(0, 139, 139, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header.small {
+    padding: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 139, 139, 0.2);
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.header.small .logo {
+    transform: scale(0.9);
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #e0ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.header.small .logo-text {
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header.small {
+    font-size: 2.2rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.head {
+    height: 80px;
+    width: 80px;
+    margin-right: 15px;
+    margin-top: 10px;
+    font-size: 2.8rem;
+    transition: all 0.3s ease;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #008b8b, #20b2aa, #00ced1);
+    color: white;
+    padding: 30px 0 20px;
+    box-shadow: 0 -4px 15px rgba(0, 139, 139, 0.3);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #ffffff, #e0ffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.github-pages {
+    color: #004c8b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.github-pages:hover {
+    color: #007adf;
+}
+
+.text_prtl {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: Verdana ;
+    opacity: 80%;
+    font-size: 20px;
+}
+
+.center_i {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.ya-ustal {
+    background-color: #4062bb;
+    background-image: linear-gradient(316deg, #070070 0%, #300045 74%);
+    width: 900px;
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cp_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.cp_text {
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    font-size: 28px;
+    margin-top: 100px;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(0, 206, 209, 0.5), 
+        #00ced1, 
+        rgba(0, 206, 209, 0.5), 
+        transparent);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: -15px;
+    width: 400px;
+}
+
+hr::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: repeating-linear-gradient(90deg,
+        transparent,
+        transparent 5px,
+        rgba(255, 255, 255, 0.3) 5px,
+        rgba(255, 255, 255, 0.3) 7px);
+}
+
+.iframe_p {
+    margin-top: 40px;
+}
+
+.cp_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.cp_text {
+    font-family: "Audiowide", sans-serif;
+    font-size: 28px;
+    margin-top: 35px;
+    color: black;
+}
+
+.profile_pic {
+    border-radius: 15px;
+}
+
+.tipo_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 400px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.b_text {
+    font-size: calc(20px + 10vh);
+    line-height: calc(20px + 12vh);
+    /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+}
+
+.b_text-div {
+    background: #222;
+    background-image: repeating-linear-gradient(to bottom, transparent 7px, rgba(0, 0, 0, 0.8) 9px, rgba(0, 0, 0, 0.8) 13px, transparent 13px);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-radius: 15px;
+}
+
+@-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
+}
+
+@keyframes blink {
+    20%,
+    24%,
+    55% {
+        color: #111;
+        text-shadow: none;
+    }
+
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+        /*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+        color: #fff6a9;
+    }
+}
+
+.translation-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #34b7f1; /* Telegram-подобный голубой */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin-bottom: 10px;
+}
+
+.translation-btn:hover {
+    background-color: #2ca5dd;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(52, 183, 241, 0.3);
+}
+
+.translation-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.stickerpack-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #8774e1; /* Фиолетовый цвет для стикеров в Telegram */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.stickerpack-btn:hover {
+    background-color: #7a68d1;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(135, 116, 225, 0.3);
+}
+
+.sticker-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.c400 {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
