@@ -6,3 +6,25 @@ window.addEventListener("scroll", function () {
         header.classList.remove("small");
     }
 });
+
+const element = document.getElementById("hom");
+const element3 = document.getElementById("only_m");
+const header_container = document.getElementById("header-container");
+const Cb_text = document.getElementById("b_text");
+const Cb_td = document.getElementById("b_text-div");
+    document.addEventListener('DOMContentLoaded', function() {
+    console.log('Page loaded');
+    element3.style.display = 'none'
+    if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        console.log('Mobile user');
+        element.style.display = 'none'
+        element3.style.display = 'block'
+        header_container.style.justifyContent = "center"
+        Cb_text.style.fontSize = "calc(10px + 5vh)"
+        Cb_td.style.paddingTop =  "0px"
+        Cb_td.style.paddingBottom =  "0px"
+        console.log('Mobile code done');
+
+}
+    console.log('All good');
+});

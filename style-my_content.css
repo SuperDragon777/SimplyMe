@@ -278,9 +278,6 @@ hr::after {
 .b_text {
     font-size: calc(20px + 10vh);
     line-height: calc(20px + 12vh);
-    /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
-    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
-  color: #fccaff; */
     text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
     color: #fff6a9;
     font-family: "Sacramento", cursive;
@@ -382,7 +379,7 @@ hr::after {
     align-items: center;
     background-color: #8774e1; /* Фиолетовый цвет для стикеров в Telegram */
     color: white;
-    padding: 12px 24px;
+    padding: 12px 100px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 18px;
@@ -391,6 +388,7 @@ hr::after {
     border: none;
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin-bottom: 10px;
 }
 
 .stickerpack-btn:hover {
@@ -412,4 +410,39 @@ hr::after {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.theme-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f27474; /* Кораллово-розовый цвет для тем */
+    color: white;
+    padding: 12px 100px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin-bottom: 10px;
+}
+
+.theme-btn:hover {
+    background-color: #e06868;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(242, 116, 116, 0.3);
+}
+
+.theme-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: white;
+}
+
+.tg_message {
+    padding-right: 40px;
+    margin-top: 10px;
 }
