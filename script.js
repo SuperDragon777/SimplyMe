@@ -12,6 +12,7 @@ const element2 = document.getElementById("hom2");
 const element3 = document.getElementById("only_m");
 const wall = document.getElementById("wall");
 const header_container = document.getElementById("header-container");
+const reviewss = document.getElementById("reviews");
     document.addEventListener('DOMContentLoaded', function() {
     element3.style.display = 'none'
     if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -20,6 +21,7 @@ const header_container = document.getElementById("header-container");
         element3.style.display = 'block'
         wall.style.maxHeight = "300px"
         header_container.style.justifyContent = "center"
+        reviewss.style.width = "500px"
 }
 });
 
