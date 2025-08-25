@@ -534,3 +534,13 @@ input:focus ~ .highlight {
     margin-right: 10px;
     fill: white;
 }
+
+.tg_share {
+    margin-top: 5px;
+    border: solid;
+    border-radius: 8px;
+    border-color: white;
+    width: 80px;
+    height: 33px;
+    align-items: center;
+}
