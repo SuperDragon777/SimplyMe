@@ -453,3 +453,23 @@ hr::after {
     padding-top: 10px;
     padding-right: 20px;
 }
+
+.steam_workshop {
+    background-color: #1b2838;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 1200px;
+    height: 700px;
+}
+
+.steam-ws_text {
+    color: white;
+    text-decoration: none;
+}
+
+.steam-ws_text2 {
+    color: grey;
+}

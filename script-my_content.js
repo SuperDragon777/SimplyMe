@@ -13,6 +13,7 @@ const header_container = document.getElementById("header-container");
 const Cb_text = document.getElementById("b_text");
 const Cb_td = document.getElementById("b_text-div");
 const pochemy_ya_tak_nazval_class = document.getElementById("pochemy_ya_tak_nazval_class");
+const steam_workshop = document.getElementById("steam_workshop");
     document.addEventListener('DOMContentLoaded', function() {
     console.log('Page loaded');
     element3.style.display = 'none'
@@ -25,6 +26,8 @@ const pochemy_ya_tak_nazval_class = document.getElementById("pochemy_ya_tak_nazv
         Cb_td.style.paddingTop =  "0px"
         Cb_td.style.paddingBottom =  "0px"
         pochemy_ya_tak_nazval_class.style.flexDirection = "column"
+        steam_workshop.style.height = "auto"
+        steam_workshop.style.width = "auto"
         console.log('Mobile code done');
 
 }
