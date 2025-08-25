@@ -21,7 +21,7 @@ const reviewss = document.getElementById("reviews");
         element3.style.display = 'block'
         wall.style.maxHeight = "300px"
         header_container.style.justifyContent = "center"
-        reviewss.style.width = "500px"
+        reviewss.style.width = "400px"
 }
 });
 
