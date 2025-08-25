@@ -545,3 +545,28 @@ input:focus ~ .highlight {
     align-items: center;
     /* idk why this code disapper (i love github) */
 }
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    background-color: #15202b;
+    margin-top: -10px;
+    border-radius: 10px;
+}
+
+.tipo_body-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.chem_ya_zanimays {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
