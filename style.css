@@ -279,7 +279,7 @@ hr::after {
 .discord-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #5865F2; /* Фиолетовый Discord */
+    background-color: #5865F2;
     color: white;
     padding: 12px 120px;
     border-radius: 8px;
@@ -337,7 +337,7 @@ hr::after {
 .xbox-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #107C10; /* Зеленый Xbox */
+    background-color: #107C10;
     color: white;
     padding: 12px 120px;
     border-radius: 8px;
@@ -510,7 +510,7 @@ input:focus ~ .highlight {
 .send-btn {
     display: inline-flex;
     align-items: center;
-    background-color: #0084ff; /* Синий цвет как в Messenger */
+    background-color: #0084ff;
     color: white;
     padding: 12px 80px;
     border-radius: 8px;
@@ -543,4 +543,5 @@ input:focus ~ .highlight {
     width: 80px;
     height: 33px;
     align-items: center;
+    /* idk why this code disapper (i love github) */
 }
