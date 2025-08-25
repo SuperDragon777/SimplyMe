@@ -405,7 +405,8 @@ hr::after {
 }
 
 .c400 {
-    display: inline-flex;
+    display: flex;
+    flex-direction: none;
 }
 
 .theme-btn {
