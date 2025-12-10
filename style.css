@@ -895,3 +895,18 @@ footer {
         transform: scale(0.95);
     }
 }
+
+.telegram-section {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.telegram-widget {
+    display: flex;
+    justify-content: center;
+    animation: fadeInUp 1s ease-out;
+}
+
