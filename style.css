@@ -215,32 +215,23 @@ h1 {
     left: 0;
 }
 
-.particle {
+.star {
     position: absolute;
-    width: 4px;
-    height: 4px;
     background: #00ff88;
     border-radius: 50%;
-    animation: float-particle 8s infinite ease-in;
-    opacity: 0.3;
+    animation: twinkle 4s infinite ease-in-out;
+    box-shadow: 0 0 4px rgba(0, 255, 136, 0.8);
 }
 
-@keyframes float-particle {
-    0% {
-        transform: translate(0, 100vh) rotate(0deg);
-        opacity: 0;
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.3;
     }
-    10% {
-        opacity: 0.8;
-    }
-    90% {
-        opacity: 0.8;
-    }
-    100% {
-        transform: translate(100vw, -100vh) rotate(360deg);
-        opacity: 0;
+    50% {
+        opacity: 1;
     }
 }
+
 
 .cta-buttons {
     display: flex;

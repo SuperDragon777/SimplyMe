@@ -1,40 +1,45 @@
-function createParticles() {
+function createStarfield() {
     const container = document.getElementById("particlesContainer");
     if (!container) return;
     
     container.innerHTML = "";
     
     const width = window.innerWidth;
-    let particleCount;
+    let starCount;
     
     if (width > 1200) {
-        particleCount = 25;
+        starCount = 80;
     } else if (width > 768) {
-        particleCount = 15;
+        starCount = 50;
     } else if (width > 480) {
-        particleCount = 10;
+        starCount = 30;
     } else {
-        particleCount = 5;
+        starCount = 20;
     }
     
     const fragment = document.createDocumentFragment();
     
-    for (let i = 0; i < particleCount; i++) {
-        const particle = document.createElement("div");
-        particle.className = "particle";
+    for (let i = 0; i < starCount; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
         
-        particle.style.left = Math.random() * 100 + "%";
-        particle.style.animationDelay = (Math.random() * 5).toFixed(2) + "s";
-        particle.style.animationDuration = (Math.random() * 3 + 5).toFixed(2) + "s";
+        const size = Math.random() * 3 + 1;
         
-        fragment.appendChild(particle);
+        star.style.width = size + "px";
+        star.style.height = size + "px";
+        star.style.left = Math.random() * 100 + "%";
+        star.style.top = Math.random() * 100 + "%";
+        star.style.animationDelay = (Math.random() * 3).toFixed(2) + "s";
+        star.style.animationDuration = (Math.random() * 2 + 2).toFixed(2) + "s";
+        
+        fragment.appendChild(star);
     }
     
     container.appendChild(fragment);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    createParticles();
+    createStarfield();
     initializeObserver();
 });
 
@@ -42,7 +47,7 @@ let resizeTimeout;
 window.addEventListener("resize", () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
-        createParticles();
+        createStarfield();
     }, 250);
 });
 
