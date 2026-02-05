@@ -1,103 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SimplyMe - SuperDragon777</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>SuperDragon777</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-orbs">
-        <div class="orb orb1"></div>
-        <div class="orb orb2"></div>
-        <div class="orb orb3"></div>
-    </div>
+    <div class="container">
+        <div class="header">
+            <div class="header-title">█ SuperDragon777 █</div>
+            <div class="header-subtitle">Use arrow keys to navigate, ENTER to select</div>
+        </div>
 
-    <header>
-        <div class="particles" id="particlesContainer"></div>
-        <div class="header-content">
-            <div class="profile-img">
-                <img src="https://superdragon777.github.io/SimplyMe/data/images/avatar.jpg" alt="SuperDragon777" draggable="false">
+        <div class="menu" id="menu">
+            <div class="menu-item active" data-section="about">
+                <span>► About</span>
+                <span>[F1]</span>
             </div>
-            <h1>SuperDragon777</h1>
-            <p class="tagline">Developer • Gamer • Creator</p>
-            <div class="cta-buttons">
-                <a class="btn btn-primary" href="#platforms">Explore</a>
-                <a class="btn btn-secondary" href="#platforms">Get in Touch</a>
+            <div class="menu-item" data-section="skills">
+                <span>  GitHub</span>
+                <span>[F2]</span>
+            </div>
+            <div class="menu-item" data-section="projects">
+                <span>  Projects</span>
+                <span>[F3]</span>
+            </div>
+            <div class="menu-item" data-section="contacts">
+                <span>  Links</span>
+                <span>[F4]</span>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <div class="content-section" id="about">
+                <div class="content-title">► USER INFORMATION</div>
+                <div class="info-grid">
+                    <div class="info-label">Username:</div>
+                    <div>SuperDragon777</div>
+                    
+                    <div class="info-label">Architecture:</div>
+                    <div>Digital Character,<br> Developer <span class="blink">█</span></div>
+                </div>
+                <div class="content-text" style="margin-top: 20px;">...and that's it for now</div>
             </div>
 
-            <div class="code-demo">
-                <div class="demo-container">
-                    <div class="code-editor">
-                        <div class="editor-header">
-                            <span class="lang-badge">JavaScript</span>
+            <div class="content-section" id="skills" style="display: none;">
+                <div class="content-title">► DISTRIBUTED VERSION CONTROL SYSTEM</div>
+                <div style="margin-top: 15px;">
+                    <div>
+                        <div class="contact-item">
+                            <strong>GitHub:</strong> <a href="https://github.com/SuperDragon777" target="_blank">https://github.com/SuperDragon777</a> 
                         </div>
-                        <pre id="codeDisplay"><span class="keyword">const</span> <span class="variable">createMagic</span> = <span class="keyword">async</span> () => {
-  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">∞</span>; i++) {
-    <span class="keyword">await</span> <span class="function">innovate</span>(<span class="string">"Web"</span>);
-    <span class="keyword">await</span> <span class="function">create</span>(<span class="string">"Magic"</span>);
-  }
-};
-<span class="function">createMagic</span>().then(() => 🚀);</span></pre>
-                    </div>
-                    <div class="demo-output">
-                        <div class="output-line"><span class="output-symbol">></span> Initializing quantum code...</div>
-                        <div class="output-line"><span class="output-symbol">></span> <span class="success">✓</span> Web Development Loaded</div>
-                        <div class="output-line"><span class="output-symbol">></span> <span class="success">✓</span> React, Vue, Angular Ready</div>
-                        <div class="output-line"><span class="output-symbol">></span> <span class="success">✓</span> Full Stack Enabled</div>
-                        <div class="output-line"><span class="output-symbol">></span> <span class="success">✓</span> Database Connected</div>
-                        <div class="output-line animated"><span class="output-symbol">></span> <span class="cursor">▌</span></div>
+                        <div class="content-text" style="margin-top: 20px;">...to be continued</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-icon"></div>
-        </div>
-    </header>
 
-    <section id="platforms" class="platforms">
-        <h2 class="section-title">My Platforms</h2>
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-icon">
-                    <img src="https://superdragon777.github.io/SimplyMe/data/images/cat_gamer.jpg" draggable="false" alt="cat_gamer" style="width:80px; height:80px; border-radius:50%; object-fit:cover; ">
+            <div class="content-section" id="projects" style="display: none;">
+                <div class="content-title">► COMPLETED OPERATIONS</div>
+                <div style="margin-top: 15px;">
+                    <div class="contact-item">
+                        <strong>Project 1: BUSINESS CARD WEBSITE</strong><br>
+                        Вебсайт на котором вы сейчас находитесь
+                    </div>
                 </div>
-                <h3>Gaming</h3>
-                <p>Explore my gaming profiles and connect with me on multiple platforms.</p>
-                <a href="https://www.xbox.com/play/user/SuperDragon7846" target="_blank" class="card-btn">Xbox</a>
-                <a href="https://steamcommunity.com/id/superdragon0000/" target="_blank" class="card-btn">Steam</a>
             </div>
-            <div class="card">
-                <div class="card-icon">
-                    <img src="https://superdragon777.github.io/SimplyMe/data/images/cat_programmer.jpg" draggable="false" alt="cat_programmer" style="width:80px; height:80px; border-radius:50%; object-fit:cover; ">
+
+            <div class="content-section" id="contacts" style="display: none;">
+                <div class="content-title">► COMMUNICATION PORT</div>
+                <div style="margin-top: 15px;">
+                    <div class="contact-item">
+                        <strong>Telegram:</strong> @superdragon0000
+                    </div>
+                    <div class="content-text" style="margin-top: 20px;">...communication aborted</div>
                 </div>
-                <h3>Development</h3>
-                <p>Check out my code and projects on GitHub.</p>
-                <a href="https://github.com/SuperDragon777" target="_blank" class="card-btn">GitHub</a>
-            </div>
-            <div class="card">
-                <div class="card-icon">
-                    <img src="https://superdragon777.github.io/SimplyMe/data/images/cat_in_shower.jpg" draggable="false" alt="cat_in_shower" style="width:80px; height:80px; border-radius:50%; object-fit:cover; ">
-                </div>
-                <h3>Communication</h3>
-                <p>Reach out to me on your favorite platform.</p>
-                <a href="https://t.me/superdragon0000" target="_blank" class="card-btn">Telegram</a>
-                <a href="https://discordapp.com/users/890596732134629486" target="_blank" class="card-btn">Discord</a>
             </div>
         </div>
-    </section>
-    <section id="telegram" class="telegram-section">
-    <h2 class="section-title">Telegram Post</h2>
-    <div class="telegram-widget">
-        <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="superdragon0000_ws/6" data-width="100%" data-dark="1"></script>
+
+        <div class="footer">
+            <span class="blink">█</span> System ready. Use arrow keys to navigate. Press ESC to return to main menu.
+        </div>
     </div>
-</section>
-
-    <footer>
-        <p>&copy; 2025 SuperDragon777. All rights reserved.</p>
-        <p style="margin-top: 10px; font-size: 0.9rem;">Hosted using GitHub Pages</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
