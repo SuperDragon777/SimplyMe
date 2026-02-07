@@ -194,3 +194,87 @@ a.button:hover {
     color: #0000AA;
     padding: 8px 15px;
 }
+
+.secret-input {
+    width: 70%;
+    padding: 10px;
+    background: #000055;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    outline: none;
+}
+
+.secret-input:focus {
+    background: #0000aa;
+    border-color: #00FFFF;
+}
+
+.secret-input::placeholder {
+    color: #aaaaaa;
+}
+
+.secret-button {
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #0000aa;
+    border: 2px solid #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+.secret-button:hover {
+    background: #00FFFF;
+    color: #0000aa;
+    border-color: #00FFFF;
+}
+
+.secret-button:active {
+    background: #5555ff;
+}
+
+.secret-message {
+    margin-top: 15px;
+    padding: 10px;
+    min-height: 20px;
+    font-size: 14px;
+}
+
+.secret-message.error {
+    color: #ff5555;
+    border-left: 3px solid #ff5555;
+    background: #330000;
+    animation: shake 0.5s;
+}
+
+.secret-message.success {
+    color: #55ff55;
+    border-left: 3px solid #55ff55;
+    background: #003300;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.secret-content {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

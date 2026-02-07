@@ -1,91 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperDragon777</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="header-title">█ SuperDragon777 █</div>
-            <div class="header-subtitle">Use arrow keys to navigate, ENTER to select</div>
-        </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SuperDragon777</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-title">█ SuperDragon777 █</div>
+                <div class="header-subtitle">Use arrow keys to navigate, ENTER to select</div>
+            </div>
 
-        <div class="menu" id="menu">
-            <div class="menu-item active" data-section="about">
-                <span>► About</span>
-                <span>[F1]</span>
-            </div>
-            <div class="menu-item" data-section="skills">
-                <span>  GitHub</span>
-                <span>[F2]</span>
-            </div>
-            <div class="menu-item" data-section="projects">
-                <span>  Projects</span>
-                <span>[F3]</span>
-            </div>
-            <div class="menu-item" data-section="contacts">
-                <span>  Links</span>
-                <span>[F4]</span>
-            </div>
-        </div>
-
-        <div class="content" id="content">
-            <div class="content-section" id="about">
-                <div class="content-title">► USER INFORMATION</div>
-                <div class="info-grid">
-                    <div class="info-label">Username:</div>
-                    <div>SuperDragon777</div>
-                    
-                    <div class="info-label">Architecture:</div>
-                    <div>Digital Character,<br> Developer <span class="blink">█</span></div>
+            <div class="menu" id="menu">
+                <div class="menu-item active" data-section="about">
+                    <span>► About</span>
+                    <span>[F1]</span>
                 </div>
-                <div class="content-text" style="margin-top: 20px;">...and that's it for now</div>
+                <div class="menu-item" data-section="secret">
+                    <span> Secret</span>
+                    <span>[F2]</span>
+                </div>
+                <div class="menu-item" data-section="projects">
+                    <span> Projects</span>
+                    <span>[F3]</span>
+                </div>
+                <div class="menu-item" data-section="contacts">
+                    <span> Links</span>
+                    <span>[F4]</span>
+                </div>
             </div>
 
-            <div class="content-section" id="skills" style="display: none;">
-                <div class="content-title">► DISTRIBUTED VERSION CONTROL SYSTEM</div>
-                <div style="margin-top: 15px;">
-                    <div>
-                        <div class="contact-item">
-                            <strong>GitHub:</strong> <a href="https://github.com/SuperDragon777" target="_blank">https://github.com/SuperDragon777</a> 
+            <div class="content" id="content">
+                <div class="content-section" id="about">
+                    <div class="content-title">► USER INFORMATION</div>
+                    <div class="info-grid">
+                        <div class="info-label">Username:</div>
+                        <div>SuperDragon777</div>
+
+                        <div class="info-label">Architecture:</div>
+                        <div>
+                            Digital Character,<br />
+                            Developer <span class="blink">█</span>
                         </div>
-                        <div class="content-text" style="margin-top: 20px;">...to be continued</div>
+                    </div>
+                    <div class="content-text" style="margin-top: 20px">...and that's it for now</div>
+                </div>
+
+                <div class="content-section" id="secret" style="display: none">
+                    <div class="content-title">► ACCESS CONTROL SYSTEM</div>
+                    <div style="margin-top: 15px">
+                        <div class="contact-item">
+                            <strong>Enter Secret Code:</strong><br />
+                            <div style="margin-top: 10px">
+                                <input
+                                    type="password"
+                                    id="secretInput"
+                                    class="secret-input"
+                                    placeholder="Type secret word..."
+                                    autocomplete="off"
+                                />
+                                <button id="checkSecret" class="secret-button">VERIFY</button>
+                            </div>
+                            <div id="secretMessage" class="secret-message"></div>
+                        </div>
+
+                        <div id="content1" style="display: none">
+                            <div class="contact-item" style="margin-top: 20px">
+                                <strong>SECRET #1 UNLOCKED</strong><br />
+                                <div style="margin-top: 10px">здарова</div>
+                            </div>
+                        </div>
+
+                        <div id="content2" style="display: none">
+                            <div class="contact-item" style="margin-top: 20px">
+                                <strong>SECRET #2 UNLOCKED</strong><br />
+                                <div style="margin-top: 10px">бро, не пытайся брутфорсить</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section" id="projects" style="display: none">
+                    <div class="content-title">► COMPLETED OPERATIONS</div>
+                    <div style="margin-top: 15px">
+                        <div class="contact-item">
+                            <strong>Project 1: BUSINESS CARD WEBSITE</strong><br>
+                            Персональная визитка в стиле DOS/BIOS интерфейса<br>
+                            <br>
+                            Технологии: HTML5, CSS3, JavaScript<br>
+                            Особенности: Клавиатурная навигация, ???<br>
+                            <br>
+                            Вебсайт на котором вы сейчас находитесь
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-section" id="contacts" style="display: none">
+                    <div class="content-title">► COMMUNICATION PORT</div>
+                    <div style="margin-top: 15px">
+                        <div class="contact-item">
+                            <strong>Telegram:</strong>
+                            <a href="https://t.me/superdragon0000" target="_blank">@superdragon0000</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>GitHub:</strong>
+                            <a href="https://github.com/SuperDragon777" target="_blank">github.com/SuperDragon777</a>
+                        </div>
+                        <div class="content-text" style="margin-top: 20px">...communication aborted</div>
                     </div>
                 </div>
             </div>
 
-            <div class="content-section" id="projects" style="display: none;">
-                <div class="content-title">► COMPLETED OPERATIONS</div>
-                <div style="margin-top: 15px;">
-                    <div class="contact-item">
-                        <strong>Project 1: BUSINESS CARD WEBSITE</strong><br>
-                        Вебсайт на котором вы сейчас находитесь
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-section" id="contacts" style="display: none;">
-                <div class="content-title">► COMMUNICATION PORT</div>
-                <div style="margin-top: 15px;">
-                    <div class="contact-item">
-                        <strong>Telegram:</strong> <a href="https://t.me/superdragon0000" target="_blank">@superdragon0000</a>
-                    </div>
-                    <div class="contact-item">
-                        <strong>GitHub:</strong> <a href="https://github.com/SuperDragon777" target="_blank">github.com/SuperDragon777</a>
-                    </div>
-                    <div class="content-text" style="margin-top: 20px;">...communication aborted</div>
-                </div>
+            <div class="footer">
+                <span class="blink">█</span> System ready. Use arrow keys to navigate. Press ESC to return to main menu.
             </div>
         </div>
 
-        <div class="footer">
-            <span class="blink">█</span> System ready. Use arrow keys to navigate. Press ESC to return to main menu.
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
