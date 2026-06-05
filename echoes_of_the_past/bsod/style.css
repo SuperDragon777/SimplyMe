@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0000aa;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border: 2px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #0000aa;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header-subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+
+.menu {
+    border: 2px solid #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    padding: 8px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item.active {
+    background: #ffffff;
+    color: #0000aa;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    background: #5555ff;
+}
+
+.menu-item.active:hover {
+    background: #ffffff;
+}
+
+.content {
+    border: 2px solid #ffffff;
+    padding: 20px;
+    min-height: 300px;
+    background: #0000aa;
+}
+
+.content-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+.content-text {
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.info-label {
+    color: #aaaaaa;
+}
+
+.skill-bar {
+    background: #000055;
+    height: 20px;
+    margin: 5px 0;
+    position: relative;
+    border: 1px solid #ffffff;
+}
+
+.skill-fill {
+    background: #ffffff;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.skill-name {
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    color: #aaaaaa;
+    font-size: 12px;
+}
+
+.contact-item {
+    margin: 10px 0;
+    padding: 8px;
+    background: #000055;
+    border-left: 3px solid #ffffff;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    background: #ffffff;
+    animation: blink 0.8s infinite;
+    margin-left: 5px;
+}
+
+a {
+    color: #00FFFF;
+    text-decoration: none;
+    border-bottom: 1px dotted #00FFFF;
+    transition: all 0.2s;
+}
+
+a:hover {
+    background: #FFFFFF;
+    color: #0000AA;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 2px 4px;
+}
+
+a:active {
+    background: #00FFFF;
+    color: #0000AA;
+}
+
+a.no-underline {
+    border-bottom: none;
+}
+
+a.button {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #FFFFFF;
+    background: #0000AA;
+    color: #FFFFFF;
+    text-align: center;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+a.button:hover {
+    background: #FFFFFF;
+    color: #0000AA;
+    padding: 8px 15px;
+}
+
+.secret-input {
+    width: 70%;
+    padding: 10px;
+    background: #000055;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    outline: none;
+}
+
+.secret-input:focus {
+    background: #0000aa;
+    border-color: #00FFFF;
+}
+
+.secret-input::placeholder {
+    color: #aaaaaa;
+}
+
+.secret-button {
+    padding: 10px 20px;
+    background: #ffffff;
+    color: #0000aa;
+    border: 2px solid #ffffff;
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.2s;
+}
+
+.secret-button:hover {
+    background: #00FFFF;
+    color: #0000aa;
+    border-color: #00FFFF;
+}
+
+.secret-button:active {
+    background: #5555ff;
+}
+
+.secret-message {
+    margin-top: 15px;
+    padding: 10px;
+    min-height: 20px;
+    font-size: 14px;
+}
+
+.secret-message.error {
+    color: #ff5555;
+    border-left: 3px solid #ff5555;
+    background: #330000;
+    animation: shake 0.5s;
+}
+
+.secret-message.success {
+    color: #55ff55;
+    border-left: 3px solid #55ff55;
+    background: #003300;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.secret-content {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

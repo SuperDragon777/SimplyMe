@@ -1,123 +1,106 @@
 <!doctype html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>SuperDragon777</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <div class="header-title">█ SuperDragon777 █</div>
-                <div class="header-subtitle">Use arrow keys to navigate, ENTER to select</div>
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>SimplyMe - SuperDragon777</title>
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Syne:wght@400;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="./favicons/seven2.svg"
+		/>
+	</head>
+	<body>
+		<div class="bg-grid"></div>
+		<canvas id="particles-canvas"></canvas>
 
-            <div class="menu" id="menu">
-                <div class="menu-item active" data-section="about">
-                    <span>► About</span>
-                    <span>[F1]</span>
-                </div>
-                <div class="menu-item" data-section="secret">
-                    <span> Secret</span>
-                    <span>[F2]</span>
-                </div>
-                <div class="menu-item" data-section="projects">
-                    <span> Projects</span>
-                    <span>[F3]</span>
-                </div>
-                <div class="menu-item" data-section="contacts">
-                    <span> Links</span>
-                    <span>[F4]</span>
-                </div>
-            </div>
+		<div class="scanlines"></div>
 
-            <div class="content" id="content">
-                <div class="content-section" id="about">
-                    <div class="content-title">► USER INFORMATION</div>
-                    <div class="info-grid">
-                        <div class="info-label">Username:</div>
-                        <div>SuperDragon777</div>
+		<main class="fullscreen-wrapper">
+			<section class="hero">
+				<div class="hero-left">
+					<div class="avatar-wrap">
+						<div class="avatar-ring"></div>
+						<img
+							class="avatar"
+							src="./img/avatar.jpg"
+							alt="SuperDragon777"
+							draggable="false"
+						/>
+						<div class="status-dot"></div>
+					</div>
+				</div>
 
-                        <div class="info-label">Architecture:</div>
-                        <div>
-                            Digital Character,<br />
-                            Developer <span class="blink">█</span>
-                        </div>
-                    </div>
-                    <div class="content-text" style="margin-top: 20px">...and that's it for now</div>
-                </div>
+				<div class="hero-right">
+					<div class="tag-line">
+						<span class="tag">📡 listening on port 127.0.0.1</span>
+					</div>
+					<h1 class="name">
+						<span class="prefix">./</span>
+						<span class="nnick">SuperDragon</span>
+						<span class="accent">777</span>
+					</h1>
+					<p class="role">
+						<span class="cursor-blink">▍</span>
+						<span id="typed-role"></span>
+					</p>
+					<p class="bio">
+						DevOps & CLI tools enthusiast.
+						<br />
+						Developing useful tools for advanced users,
+						<br />
+						automation, and occasionally web.
+					</p>
+					<div class="socials">
+						<a
+							href="https://github.com/SuperDragon777"
+							class="social-btn github"
+							target="_blank"
+						>
+							<i class="icon icon-github"></i>
+							GitHub
+						</a>
+						<a
+							href="https://t.me/superdragon0000"
+							class="social-btn telegram"
+							target="_blank"
+						>
+							<i class="icon icon-telegram"></i>
+							Telegram
+						</a>
+						<a
+							href="https://steamcommunity.com/id/superdragon0000/"
+							class="social-btn steam"
+							target="_blank"
+						>
+							<i class="icon icon-steam"></i>
+							Steam
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
 
-                <div class="content-section" id="secret" style="display: none">
-                    <div class="content-title">► ACCESS CONTROL SYSTEM</div>
-                    <div style="margin-top: 15px">
-                        <div class="contact-item">
-                            <strong>Enter Secret Code:</strong><br />
-                            <div style="margin-top: 10px">
-                                <input
-                                    type="password"
-                                    id="secretInput"
-                                    class="secret-input"
-                                    placeholder="Type secret word..."
-                                    autocomplete="off"
-                                />
-                                <button id="checkSecret" class="secret-button">VERIFY</button>
-                            </div>
-                            <div id="secretMessage" class="secret-message"></div>
-                        </div>
-
-                        <div id="content1" style="display: none">
-                            <div class="contact-item" style="margin-top: 20px">
-                                <strong>SECRET #1 UNLOCKED</strong><br />
-                                <div style="margin-top: 10px">здарова</div>
-                            </div>
-                        </div>
-
-                        <div id="content2" style="display: none">
-                            <div class="contact-item" style="margin-top: 20px">
-                                <strong>SECRET #2 UNLOCKED</strong><br />
-                                <div style="margin-top: 10px">бро, не пытайся брутфорсить</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-section" id="projects" style="display: none">
-                    <div class="content-title">► COMPLETED OPERATIONS</div>
-                    <div style="margin-top: 15px">
-                        <div class="contact-item">
-                            <strong>Project 1: BUSINESS CARD WEBSITE</strong><br>
-                            Персональная визитка в стиле DOS/BIOS интерфейса<br>
-                            <br>
-                            Технологии: HTML5, CSS3, JavaScript<br>
-                            Особенности: Клавиатурная навигация, ???<br>
-                            <br>
-                            Вебсайт на котором вы сейчас находитесь
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-section" id="contacts" style="display: none">
-                    <div class="content-title">► COMMUNICATION PORT</div>
-                    <div style="margin-top: 15px">
-                        <div class="contact-item">
-                            <strong>Telegram:</strong>
-                            <a href="https://t.me/superdragon0000" target="_blank">@superdragon0000</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>GitHub:</strong>
-                            <a href="https://github.com/SuperDragon777" target="_blank">github.com/SuperDragon777</a>
-                        </div>
-                        <div class="content-text" style="margin-top: 20px">...communication aborted</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer">
-                <span class="blink">█</span> System ready. Use arrow keys to navigate. Press ESC to return to main menu.
-            </div>
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+		<script src="script.js"></script>
+	</body>
 </html>
