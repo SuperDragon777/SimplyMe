@@ -96,10 +96,90 @@
 							<i class="icon icon-steam"></i>
 							Steam
 						</a>
+						<button
+							class="social-btn projects-btn"
+							onclick="openProjects()"
+						>
+							<i class="icon icon-projects"></i>
+							Projects
+						</button>
 					</div>
 				</div>
 			</section>
 		</main>
+
+		<div
+			class="modal-overlay"
+			id="projects-modal"
+			onclick="closeProjects(event)"
+		>
+			<div class="modal">
+				<div class="modal-header">
+					<span class="modal-title">
+						<span class="prefix">./</span>
+						projects
+					</span>
+					<button
+						class="modal-close"
+						onclick="closeProjects()"
+					>
+						&#x2715;
+					</button>
+				</div>
+				<div class="projects-grid">
+					<a
+						class="project-card"
+						href="https://github.com/SuperDragon777/tooly"
+						target="_blank"
+					>
+						<div class="project-top">
+							<span class="project-name">tooly</span>
+							<i class="icon icon-github project-icon"></i>
+						</div>
+						<p class="project-desc">
+							Lightweight terminal utilities for Python developers.
+						</p>
+						<div class="project-tags">
+							<span class="tag">Python</span>
+							<span class="tag">Library</span>
+						</div>
+					</a>
+					<a
+						class="project-card"
+						href="https://github.com/SuperDragon777/SimplyMe"
+						target="_blank"
+					>
+						<div class="project-top">
+							<span class="project-name">SimplyMe</span>
+							<i class="icon icon-github project-icon"></i>
+						</div>
+						<p class="project-desc">
+							Personal portfolio page — the site you're looking at.
+						</p>
+						<div class="project-tags">
+							<span class="tag">HTML</span>
+							<span class="tag">CSS</span>
+							<span class="tag">JS</span>
+						</div>
+					</a>
+					<a
+						class="project-card"
+						href="https://github.com/SuperDragon777/DevBox"
+						target="_blank"
+					>
+						<div class="project-top">
+							<span class="project-name">DevBox</span>
+							<i class="icon icon-github project-icon"></i>
+						</div>
+						<p class="project-desc">Useful utilities for different tasks.</p>
+						<div class="project-tags">
+							<span class="tag">Python</span>
+							<span class="tag">Tools</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
 
 		<script src="script.js"></script>
 	</body>

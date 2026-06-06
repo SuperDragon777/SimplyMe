@@ -160,3 +160,22 @@ function initParticles() {
 		createParticles()
 	})
 }
+
+function openProjects() {
+	const modal = document.getElementById('projects-modal')
+	if (!modal) return
+	modal.classList.add('open')
+	document.body.style.overflow = 'hidden'
+}
+
+function closeProjects(e) {
+	if (e && e.target !== document.getElementById('projects-modal')) return
+	const modal = document.getElementById('projects-modal')
+	if (!modal) return
+	modal.classList.remove('open')
+	document.body.style.overflow = ''
+}
+
+document.addEventListener('keydown', e => {
+	if (e.key === 'Escape') closeProjects()
+})
